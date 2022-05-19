@@ -1,0 +1,5 @@
+digraph {
+	rankdir=BT size="8,5"
+	4 [label=narx1 color=black fillcolor=white shape=Msquare style=filled]
+	0 -> 4
+}
