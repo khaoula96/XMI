@@ -19,4 +19,6 @@
 
 ###### and so the models can be recreated exactly. In addition, the Prophet model and timings code used is under "Elect_model_vs_Prophet/train_prophet_models.py".  
 
-##### 3rd experiment: Kernel models
+##### 3rd experiment: Kernel models:
+###### The evolution of the training algorithm can be found in the video located in ?. 
+###### The output folder created by the xmi (using run_3_kernels.py script ) is located under "kernel_models/kernel" and the model specification file is located in there as xmi.cfg.
