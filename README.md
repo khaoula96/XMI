@@ -11,11 +11,11 @@
 ###### The electrical demand data can be found under "Elect_model_vs_Prophet/elect_data.zip" and the python script used to generate the 10 models can be found under "Elect_model_vs_Prophet/xmi_run_elect.py. The output for the 10 trained models will be found under "Elect_model_vs_Prophet/stlf_models.zip"(each directory corresponds to the output of a certain model, for example stlf1 is for the output of model 1, stlf2 is for model 2, etc...). 
 
 ###### These output folders will be including:
-###### * the model coefficients (for example stlf1/coeffs/narx1_W.csv contains the weight matrix for the narx1 which is node 1)
-###### * The structure (the structure of the model is shown as a graph like stlf1/graph.pfd)
-###### * The output of each node of the model (for example stlf1/node_data/narx1.csv shows the output of the narx1 node in the model) 
-###### * The predictions (stlf1/predictions.hdf5)
-###### * The forecasts (stlf1/forecasts.hdf5)  
+#######   * the model coefficients (for example stlf1/coeffs/narx1_W.csv contains the weight matrix for the narx1 which is node 1)
+#######   * The structure (the structure of the model is shown as a graph like stlf1/graph.pfd)
+#######   * The output of each node of the model (for example stlf1/node_data/narx1.csv shows the output of the narx1 node in the model) 
+#######   * The predictions (stlf1/predictions.hdf5)
+#######   * The forecasts (stlf1/forecasts.hdf5)  
 
 ###### and so the models can be recreated exactly. In addition, the Prophet model and timings code used is under "Elect_model_vs_Prophet/train_prophet_models.py".  
 
