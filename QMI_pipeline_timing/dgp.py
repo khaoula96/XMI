@@ -329,5 +329,5 @@ def generate_data(path, train_size=50000000):
 
 
 if __name__ == "__main__":
-    #generate_data("path")
-    pass
+    generate_data("path")
+    
