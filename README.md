@@ -7,7 +7,7 @@ PS: We do not include the XMI itself as this is a proprietary but the models and
 We Mainly conducted three experimets:
 1.  Data pipeline timing: This experiment will be found under [QMI_pipeline_timing](QMI_pipeline_timing) directory. We experimented with several testing files consisting of 50M rows with different combination of categorical and continuous features (the data generation process script is in [dgp.py](QMI_pipeline_timing/dgp.py) ) and compared the QMI (Queue Model Interface), the Tensorflows One Shot Iterator [tf_records.py](QMI_pipeline_timing/tf_records.py) and the Pytorchs Dataloader [pytorch_dataloader.py](QMI_pipeline_timing/pytorch_dataloader.py) timings as we cycle through the data.
 
-# How to run the first experiment #
+### How to run the Data pipeline timing experiment ###
 
 The following steps should allow you to run the experiment locally.
 
