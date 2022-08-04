@@ -48,4 +48,4 @@ and so the models can be recreated exactly. In addition, the Prophet model and t
 
 ### 3rd Experiment ###
 
-3.  Kernel models: The evolution of the training algorithm are illustrated in the mp4 video located in [Kernel_models](Kernel_models) directory. The output folder created by the xmi using [run_3_kernels.py](Kernel_models/run_3_kernels.py) script  is located in  [kernel3.zip](Kernel_models/kernel3.zip) and the model specification file is located in there as xmi.cfg.
+3.  Kernel models: The evolution of the training algorithm are illustrated in the mp4 video located in [Kernel_models](Kernel_models) directory. The output folder created by the xmi using [run_3_kernels.py](Kernel_models/run_3_kernels.py) script  is located in  [kernel3.zip](Kernel_models/kernel3.zip) and the model specification file is located in there as 'xmi.cfg'.
