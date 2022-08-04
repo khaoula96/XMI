@@ -9,7 +9,7 @@ import tensorflow as tf
 import time
 import h5py
 import numpy as np
-import os, psutil
+import os
 
 def read_hdf5(path):
 

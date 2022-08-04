@@ -7,6 +7,26 @@ PS: We do not include the XMI itself as this is a proprietary but the models and
 We Mainly conducted three experimets:
 1.  Data pipeline timing: This experiment will be found under [QMI_pipeline_timing](QMI_pipeline_timing) directory. We experimented with several testing files consisting of 50M rows with different combination of categorical and continuous features (the data generation process script is in [dgp.py](QMI_pipeline_timing/dgp.py) ) and compared the QMI (Queue Model Interface), the Tensorflows One Shot Iterator [tf_records.py](QMI_pipeline_timing/tf_records.py) and the Pytorchs Dataloader [pytorch_dataloader.py](QMI_pipeline_timing/pytorch_dataloader.py) timings as we cycle through the data.
 
+# How to run the first experiment #
+
+The following steps should allow you to run the experiment locally.
+
+Install these requirements:
+
+     Python
+     h5py
+     numpy
+     tensorflow
+     torch
+
+Open an IDE (for example Spider)
+
+Run the files
+
+The results should be generated in your defined directory
+
+
+
 2.  Electrical demand model vs prophet: The electrical demand data can be found under [elect_data.zip](Elect_model_vs_prophet/elect_data.zip) and the python script used to generate the 10 models can be found in [xmi_run_elec.py](Elect_model_vs_prophet/xmi_run_elec.py). The output for the 10 trained models will be found under [QMI_pipeline_timing](QMI_pipeline_timing) directory.
 
 PS: Each output directory corresponds to the output of a certain model, for example stlf1 is for the output of model 1, stlf2 is for model 2, etc... 
