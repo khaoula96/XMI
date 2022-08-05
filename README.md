@@ -38,9 +38,11 @@ The output of the 10 trained models will be found under [Elect_model_vs_prophet]
 
 Each zip file contains the following subfiles:
 
-1. The model configuration (for example[stlf.cfg](Elect_model_vs_prophet/stlf.cfg)): It contains the different parts that composes the structure of the model, from specifying the train and test datasets, defining the general parameters of the model(learning rate, number of iterations, loss function) to specifying the computational nodes like `node1` which takes an embedding layer and apply it for the `location` categorical feature. This model configuration file will created in every zip file under the name of `xmi.cfg`.
+1. The model configuration (for example [stlf.cfg](Elect_model_vs_prophet/stlf.cfg)): It contains the different parts that composes the structure of the model, from specifying the train and test datasets, defining the general parameters of the model(learning rate, number of iterations, loss function) to specifying the computational nodes like `node1` which takes an embedding layer and apply it for the `location` categorical feature. 
 
-2. The structure: the structure of the model is shown as a pdf graph like `stlf1/graph.pdf`)
+This model configuration file will be created in every zip file under the name of `xmi.cfg`.
+
+2. The structure: the structure of the model is shown as a pdf graph. For example  `stlf1/graph.pdf` is shown as ![stlf1](Elect_model_vs_prophet/plots/stlf1.pdf)
 
 
 2. The model coefficients: for example `stlf1/coeffs/narx1_W.csv` contains the weight matrix for the narx1 which is node 1)
