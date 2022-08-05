@@ -30,7 +30,7 @@ The following steps should allow you to run the experiment locally.
 
 5. Run the files and the results of the timings will be shown in the console.
 
-### 2nd Experiment: Electrical demand model###
+### 2nd Experiment: Electrical demand model ###
 
 This experiment will be found under [Elect_model_vs_prophet](Elect_model_vs_prophet). In this exepriment we used  [xmi_run_elec.py](Elect_model_vs_prophet/xmi_run_elec.py) python script with the electrical demand data that will be found in  [elect_data.zip](Elect_model_vs_prophet/elect_data.zip) to generate 10 models, each one has it's own structure and configuration.
 
