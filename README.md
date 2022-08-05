@@ -42,21 +42,20 @@ Each zip file contains the following subfiles:
 
 This model configuration file will be created in every zip file under the name of `xmi.cfg`.
 
-2. The structure: the structure of the model is shown as a pdf graph. For example  `stlf1/graph.pdf` is shown as ![stlf1](Elect_model_vs_prophet/plots/stlf1.pdf)
+2. The structure: the structure of the model is shown as a pdf graph. For example the structure of the first model `stlf1/graph.pdf` is shown as ![stlf1](Elect_model_vs_prophet/plots/stlf1.pdf). The structure of the sixth model `stlf6/graph.pdf` is shown as ![stlf6](Elect_model_vs_prophet/plots/stlf6.pdf).
 
+2. The model coefficients: Which represents the trained parameters for a model. For example `stlf1/coeffs/narx1_W.csv` file contains the weight matrix `W` for the `node1` which is named `narx1` for the first model `stlf1`.
 
-2. The model coefficients: for example `stlf1/coeffs/narx1_W.csv` contains the weight matrix for the narx1 which is node 1)
+4. The output of each node of the model: For example we have `stlf1/node_data/narx1.csv` file which contains the output of `narx1` node for the first model `stlf1`
 
+5. The predictions: For example we  have `stlf1/predictions.hdf5` file which contains the final output of the model `stlf1` for the train data.
 
+6. The forecasts: This file for example `stlf1/forecasts.hdf5` containes the final output of the model `stlf1` for the test data.
 
-4. The output of each node of the model (for example `stlf1/node_data/narx1.csv` shows the output of the narx1 node in the model) 
+and so the models can be recreated exactly. 
 
-5. The predictions (`stlf1/predictions.hdf5`)
-
-6. The forecasts (`stlf1/forecasts.hdf5`)  
-
-and so the models can be recreated exactly. In addition, the Prophet model and timings code used is in [train_prophet_models.py](Elect_model_vs_prophet/train_prophet_models.py).
+In addition, the Prophet model and timings code used is in [train_prophet_models.py](Elect_model_vs_prophet/train_prophet_models.py).
 
 ### 3rd Experiment ###
 
-3.  Kernel models: The evolution of the training algorithm are illustrated in the mp4 video located in [Kernel_models](Kernel_models) directory. The output folder created by the xmi using [run_3_kernels.py](Kernel_models/run_3_kernels.py) script  is located in  [kernel3.zip](Kernel_models/kernel3.zip) and the model specification file is located in there as `xmi.cfg`.
+3.  Kernel models: The evolution of the training algorithm are illustrated in a mp4 video located in [Kernel_models](Kernel_models) directory. The output folder created by the xmi using [run_3_kernels.py](Kernel_models/run_3_kernels.py) script  is located in  [kernel3.zip](Kernel_models/kernel3.zip) and the model specification file is located in there as `xmi.cfg`.
