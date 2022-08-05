@@ -16,11 +16,11 @@ The following steps should allow you to run the experiment locally.
 
 1. Install these requirements:
 
-      Python
-      h5py
-      numpy
-      tensorflow
-      torch
+        Python
+        h5py
+        numpy
+        tensorflow
+        torch
 
 2. Open an IDE (for example Spider IDE).
 
