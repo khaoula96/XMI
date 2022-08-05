@@ -10,7 +10,7 @@ We Mainly conducted three experimets:
 This experiment will be found under [QMI_pipeline_timing](QMI_pipeline_timing) directory. 
 We experimented with several testing files consisting of 50M rows with different combination of categorical and continuous features (the data generation process script is in [dgp.py](QMI_pipeline_timing/dgp.py) ) and compared the QMI (Queue Model Interface), the Tensorflows One Shot Iterator [tf_records.py](QMI_pipeline_timing/tf_records.py) and the Pytorchs Dataloader [pytorch_dataloader.py](QMI_pipeline_timing/pytorch_dataloader.py) timings as we cycle through the data.
 
-#### How to run the Data pipeline timing experiment ####
+#### How to run the Data pipeline timing experiment ? ####
 
 The following steps should allow you to run the experiment locally.
 
@@ -38,13 +38,11 @@ The output of the 10 trained models will be found under [Elect_model_vs_prophet]
 
 Each zip file contains the following subfiles:
 
-1. The model configuration (for example [stlf.cfg](Elect_model_vs_prophet/stlf.cfg)): It contains the different parts that composes the structure of the model, from specifying the train and test datasets, defining the general parameters of the model(learning rate, number of iterations, loss function) to specifying the computational nodes like `node1` which takes an embedding layer and apply it for the `location` categorical feature. 
-
-This model configuration file will be created in every zip file under the name of `xmi.cfg`.
+1. The model configuration (for example [stlf.cfg](Elect_model_vs_prophet/stlf.cfg)): It contains the different parts that composes the structure of the model, from specifying the train and test datasets, defining the general parameters of the model(learning rate, number of iterations, loss function) to specifying the computational nodes like `node1` which takes an embedding layer and apply it for the `location` categorical feature. This model configuration file will be created in every zip file under the name of `xmi.cfg`.
 
 2. The structure: the structure of the model is shown as a pdf graph. For example the structure of the first model `stlf1/graph.pdf` is shown as ![stlf1](Elect_model_vs_prophet/plots/stlf1.pdf). The structure of the sixth model `stlf6/graph.pdf` is shown as ![stlf6](Elect_model_vs_prophet/plots/stlf6.pdf).
 
-2. The model coefficients: Which represents the trained parameters for a model. For example `stlf1/coeffs/narx1_W.csv` file contains the weight matrix `W` for the `node1` which is named `narx1` for the first model `stlf1`.
+2. The model coefficients: Which represents the trained parameters for each node (each componenet of the model). For example `stlf1/coeffs/narx1_W.csv` file contains the weight matrix `W` and `stlf1/coeffs/narx1_b.csv` file contains the bias values and both of them are for the `node1` which is named `narx1` for the first model `stlf1`.
 
 4. The output of each node of the model: For example we have `stlf1/node_data/narx1.csv` file which contains the output of `narx1` node for the first model `stlf1`
 
