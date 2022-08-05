@@ -14,7 +14,7 @@ We experimented with several testing files consisting of 50M rows with different
 
 The following steps should allow you to run the experiment locally.
 
-Install these requirements:
+1. Install these requirements:
 
      Python
      h5py
@@ -22,13 +22,13 @@ Install these requirements:
      tensorflow
      torch
 
-Open an IDE (for example Spider IDE).
+2. Open an IDE (for example Spider IDE).
 
-Set the path of the data that will be generated in [dgp.py](QMI_pipeline_timing/dgp.py).
+3. Set the path of the data that will be generated in [dgp.py](QMI_pipeline_timing/dgp.py).
 
-Set the path of the generated data that will be used in [tf_records.py](QMI_pipeline_timing/tf_records.py) and [pytorch_dataloader.py](QMI_pipeline_timing/pytorch_dataloader.py).
+4. Set the path of the generated data that will be used in [tf_records.py](QMI_pipeline_timing/tf_records.py) and [pytorch_dataloader.py](QMI_pipeline_timing/pytorch_dataloader.py).
 
-Run the files and the results of the timings will be shown in the console.
+5. Run the files and the results of the timings will be shown in the console.
 
 ### 2nd Experiment: Electrical demand model###
 
